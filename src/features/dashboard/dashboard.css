@@ -1,0 +1,160 @@
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+.kpi-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.kpi-card.premium {
+    background: linear-gradient(135deg, var(--surface) 0%, rgba(200, 155, 60, 0.1) 100%);
+    border: 1px solid rgba(200, 155, 60, 0.3);
+}
+
+.kpi-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.kpi-title {
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    color: var(--text-muted);
+}
+
+.kpi-header i {
+    font-size: 20px;
+    color: var(--primary);
+}
+
+.kpi-value {
+    font-size: 28px;
+    font-weight: 900;
+    font-family: 'Outfit', sans-serif;
+    margin-bottom: 4px;
+}
+
+.kpi-subtext {
+    font-size: 10px;
+    color: var(--text-muted);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.sparkline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    pointer-events: none;
+    opacity: 0.3;
+}
+
+.analytics-row {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    gap: 32px;
+    margin-bottom: 48px;
+}
+
+.chart-container {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chart-title {
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: var(--text-muted);
+    margin-bottom: 32px;
+    text-transform: uppercase;
+}
+
+.main-chart canvas, .secondary-chart canvas {
+    flex: 1;
+}
+
+.history-row {
+    margin-bottom: 48px;
+}
+
+.transaction-history {
+    padding: 40px;
+}
+
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.text-btn {
+    background: none;
+    border: none;
+    color: var(--primary);
+    font-weight: 900;
+    font-size: 11px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.transaction-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.transaction-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: var(--border-radius-md);
+    transition: background 0.3s ease;
+}
+
+.transaction-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.tx-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.tx-id {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.tx-time {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.tx-amount {
+    font-weight: 900;
+    font-family: 'Outfit', sans-serif;
+}
+
+.anomaly-badge {
+    background: rgba(239, 68, 68, 0.1);
+    color: var(--danger);
+    font-size: 8px;
+    font-weight: 900;
+    padding: 4px 8px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+}
