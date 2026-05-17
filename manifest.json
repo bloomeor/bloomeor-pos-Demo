@@ -1,0 +1,37 @@
+{
+  "name": "Bloomeor POS Enterprise Core",
+  "short_name": "Bloomeor POS",
+  "description": "Sovereign Zero-Latency Enterprise-Grade POS Terminal",
+  "start_url": ".",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#000000",
+  "theme_color": "#0A0A0A",
+  "status_bar": "black-translucent",
+  "icons": [
+    {
+      "src": "images/logo/Bloomeor-logo.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "images/logo/Bloomeor-logo.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "images/logo/Bloomeor-logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "images/logo/Bloomeor-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
